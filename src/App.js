@@ -14,8 +14,8 @@ function App() {
         <NavBar/>
         <Switch>
           <Route path='/' exact component={Inicio}/>
-          <Route path='/velas' exact component={Velas}/>
-          <Route path='/escenciasymas' exact component={EscenciasYMas}/>
+          <Route path='/Velas' exact component={Velas}/>
+          <Route path='/EscenciasYMas' exact component={EscenciasYMas}/>
         </Switch>
       </Router>
       <header className="App-header">
