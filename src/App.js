@@ -1,9 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import NavBar from './components/navegación/NavBar'
+import Inicio from './components/pages/Inicio'
+import Velas from './components/pages/Velas'
+import EscenciasYMas from './components/pages/EscenciasYMas' 
+
 
 function App() {
   return (
     <div className="App">
+      <Router>
+        <NavBar/>
+        <Switch>
+          <Route path='/' exact component={Inicio}/>
+          <Route path='/velas' exact component={Velas}/>
+          <Route path='/escenciasymas' exact component={EscenciasYMas}/>
+        </Switch>
+      </Router>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
