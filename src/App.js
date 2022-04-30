@@ -6,7 +6,7 @@ import Inicio from './components/pages/Inicio'
 import Velas from './components/pages/Velas'
 import EscenciasYMas from './components/pages/EscenciasYMas' 
 import CartWidget from './components/pages/CartWidget'; 
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/pages/ItemListContainer';
 
 
 
