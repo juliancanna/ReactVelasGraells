@@ -22,6 +22,11 @@ const NavBar = () => {
         <li className="nav-item">
           <Link className="nav-link" to='/EscenciasyMas'>Escencias y más</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to='/CartWidget'>
+          <img src='./basket2.svg' width='30'/>
+          </Link>
+        </li>
       </ul>
     </div>
   </div>

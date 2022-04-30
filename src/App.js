@@ -5,6 +5,10 @@ import NavBar from './components/navegación/NavBar'
 import Inicio from './components/pages/Inicio'
 import Velas from './components/pages/Velas'
 import EscenciasYMas from './components/pages/EscenciasYMas' 
+import CartWidget from './components/pages/CartWidget'; 
+import ItemListContainer from './components/ItemListContainer';
+
+
 
 
 function App() {
@@ -14,11 +18,15 @@ function App() {
         <NavBar/>
         <Switch>
           <Route path='/' exact component={Inicio}/>
-          <Route path='/Velas' exact component={Velas}/>
-          <Route path='/EscenciasYMas' exact component={EscenciasYMas}/>
+          <Route path='/Velas' component={Velas}/>
+          <Route path='/EscenciasYMas' component={EscenciasYMas}/>
+          <Route path='/CartWidget' component={CartWidget}/>
         </Switch>
       </Router>
-      <header className="App-header">
+      <Router>
+        <ItemListContainer/>
+      </Router>
+     {/*  <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -31,7 +39,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
